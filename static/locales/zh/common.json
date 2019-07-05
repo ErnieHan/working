@@ -1,0 +1,7 @@
+{
+  "h1": "i18n中文版語言",
+  "change-locale": "切換語言",
+  "to-second-page": "前往第二頁",
+  "error-with-status": "錯誤訊息 ({{statusCode}})",
+  "error-without-status": "錯誤訊息"
+}
