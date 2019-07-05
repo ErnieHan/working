@@ -123,9 +123,9 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(LayoutInside, {
         ref: "element",
         state: this.state
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, {
-        onClick: this.goToWorkPage.bind(this, url)
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, subtitle)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Date, null, date), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Point, null, pointWords), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "/work/youtube-video-api"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, subtitle))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Date, null, date), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Point, null, pointWords), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-image"
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-name-and-labels"
