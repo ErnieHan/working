@@ -13678,10 +13678,10 @@ function (_Component) {
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "searching", function (e) {
-      var keywords = e.target.value;
+      var keywords = e.target.value.toLowerCase();
 
       _this.setState({
-        keywords: keywords
+        keywords: e.target.value
       });
 
       if (keywords.length > 2) {
