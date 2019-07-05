@@ -1,0 +1,143 @@
+{
+  "abc": [
+    {
+      "email": "ernie2",
+      "password": "aGFuMTk5NDEwMjRhc2Rm",
+      "id": 1
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 2
+    }
+  ],
+  "abc1": {
+    "num": 456
+  },
+  "chowsangsang": {
+    "channelCatalogItems": [
+      {
+        "itemId": "5cf6102c92833a0001dca42b",
+        "code": "90914C-24GG",
+        "productName1": "Charme",
+        "productName2": "XOXO親親抱抱 足金串珠",
+        "productName3": "足金串飾",
+        "docId": null,
+        "productDesc": "以流行於西方的書信符號XOXO為主題，意即親吻與擁抱。充滿年輕活力的字體配以浪漫心形，代表了愛的表白。",
+        "priceType": "N",
+        "collection": {
+          "code": "C446",
+          "description": "Charme"
+        },
+        "subCollection": {
+          "code": "S0528",
+          "description": "愛情系列"
+        },
+        "usage": {
+          "code": "C",
+          "description": "串飾"
+        },
+        "productType": {
+          "code": "GF",
+          "description": "定價足金"
+        },
+        "categories": [
+          {
+            "code": "JEWELLERY",
+            "seq": null
+          },
+          {
+            "code": "JEWELLERY-BYCATEGORY-CHARME",
+            "seq": null
+          },
+          {
+            "code": "JEWELLERY-BYMETAL-24KGOLD",
+            "seq": null
+          },
+          {
+            "code": "COLLECTIONS",
+            "seq": null
+          },
+          {
+            "code": "COLLECTIONS-SIGNATURECOLLECTIONS-CHARME",
+            "seq": null
+          },
+          {
+            "code": "GIFTS-BYPRICE-5001-8000",
+            "seq": null
+          },
+          {
+            "code": "Whatsnew-Whatsnew",
+            "seq": null
+          }
+        ],
+        "styleCatgNbr": "90914",
+        "materialCategory": {
+          "code": null,
+          "description": null
+        },
+        "goldType": {
+          "code": "24GG",
+          "description": "999黃金"
+        },
+        "prodPart": [
+          {
+            "code": "PLAS",
+            "description": "塑料"
+          }
+        ],
+        "necklace": null,
+        "channelBookingUnits": [
+          {
+            "cbu": "5cf6102c92833a0001dca42a",
+            "origPrice": "NT$6,900",
+            "starDollarEarnRate": "5%",
+            "starDollarRedeemUp": "517",
+            "starDollarNTRedeemUp": "NT$2,068",
+            "quantity": 1,
+            "earmarkQuantity": 0,
+            "detail": {
+              "description": "以流行於西方的書信符號XOXO為主題，意即親吻與擁抱。充滿年輕活力的字體配以浪漫心形，代表了愛的表白。",
+              "information": [
+                {
+                  "title": "串飾資料",
+                  "data": [
+                    {
+                      "name": "款號",
+                      "value": "90914C-24GG"
+                    },
+                    {
+                      "name": "材質",
+                      "value": "足金"
+                    },
+                    {
+                      "name": "重量",
+                      "value": "約 0.42 錢 (約0.042兩)"
+                    },
+                    {
+                      "name": "價格類型",
+                      "value": "定價"
+                    },
+                    {
+                      "name": "配件",
+                      "value": [
+                        "塑料"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "productType": "GF",
+            "returnable": true
+          }
+        ],
+        "engraving": false,
+        "brand": {
+          "code": null,
+          "description": null
+        }
+      }
+    ]
+  }
+}

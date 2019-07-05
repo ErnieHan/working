@@ -1,0 +1,16 @@
+{
+  "name": "Ernie",
+  "id": "post",
+  "channelBookingUnit": [
+    { "name": "XOXO手鐲串珠", "price": "NT.2,000" },
+    { "name": "OXOX項鍊串珠", "price": "NT.1,780" }
+  ],
+  "booking": [
+    { "name": "blog" },
+    { "name": "blog" },
+    { "name": "blog" },
+    { "name": "blog" },
+    { "name": "blog" },
+    { "name": "blog" }
+  ]
+}
