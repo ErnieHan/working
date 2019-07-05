@@ -140,7 +140,7 @@ function (_Component) {
         return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Label__WEBPACK_IMPORTED_MODULE_9__["default"], {
           key: i,
           name: label.labelName,
-          background: "#67C867"
+          type: label.labelCode
         });
       }))))));
     }
@@ -171,11 +171,19 @@ var Label = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].label.with
   displayName: "Label",
   componentId: "sc-1kv2spb-0"
 })(["background:", ";font-size:12px;margin-right:5px;margin-top:5px;border-radius:5px;min-width:55px;text-align:center;padding:6px 0;color:white;display:flex;justify-content:center;align-items:center;cursor:pointer;"], function (props) {
-  return props.background ? props.background : "black";
+  if (props.type === "api") {
+    return "#67C867";
+  } else if (props.type === "video") {
+    return "#FF9B48";
+  } else if (props.type === "form") {
+    return "#AF957F";
+  } else {
+    return "black";
+  }
 });
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Label, {
-    background: props.background,
+    type: props.type,
     className: "label-tag"
   }, props.name);
 });
@@ -220,10 +228,6 @@ var MetaHead = function MetaHead(props) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "apple-touch-icon",
     href: "/static/touch-icon.png"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "mask-icon",
-    href: "/static/favicon-mask.svg",
-    color: "#49B882"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "icon",
     href: "/static/favicon.ico"
@@ -285,40 +289,58 @@ MetaHead.propTypes = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _web_head_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./web-head-css */ "./components/WebHead/web-head-css.js");
 
 
 
-var Header = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header.withConfig({
-  displayName: "WebHead__Header",
-  componentId: "sc-1vp1qsj-0"
-})(["width:100%;background:#ffffff;border-bottom:1px solid white;"]);
-var Inline = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "WebHead__Inline",
-  componentId: "sc-1vp1qsj-1"
-})(["max-width:1480px;margin:0 auto;display:flex;padding:15px;justify-content:space-between;align-items:center;"]);
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "WebHead__Logo",
-  componentId: "sc-1vp1qsj-2"
-})(["color:#fa8182;font-size:36px;font-weight:900;font-family:\"Galano\";cursor:pointer;"]);
-var User = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "WebHead__User",
-  componentId: "sc-1vp1qsj-3"
-})(["width:50px;height:50px;background:url(\"/static/img/xion.jpg\") no-repeat center center;background-size:contain;border-radius:50%;border:1px solid #e9e8e7;"]);
 
 var handleClick = function handleClick() {
-  next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push("/");
+  next_router__WEBPACK_IMPORTED_MODULE_1___default.a.push("/");
 };
 
 var WebHead = function WebHead() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inline, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_web_head_css__WEBPACK_IMPORTED_MODULE_2__["Header"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_web_head_css__WEBPACK_IMPORTED_MODULE_2__["Inline"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_web_head_css__WEBPACK_IMPORTED_MODULE_2__["Logo"], {
     onClick: handleClick
-  }, "Practice"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(User, null)));
+  }, "Practice"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_web_head_css__WEBPACK_IMPORTED_MODULE_2__["User"], null)));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(WebHead));
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(WebHead));
+
+/***/ }),
+
+/***/ "./components/WebHead/web-head-css.js":
+/*!********************************************!*\
+  !*** ./components/WebHead/web-head-css.js ***!
+  \********************************************/
+/*! exports provided: Header, Inline, Logo, User */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Inline", function() { return Inline; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "User", function() { return User; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var Header = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].header.withConfig({
+  displayName: "web-head-css__Header",
+  componentId: "sc-51upct-0"
+})(["width:100%;background:#ffffff;border-bottom:1px solid #e9e8e7;"]);
+var Inline = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "web-head-css__Inline",
+  componentId: "sc-51upct-1"
+})(["max-width:1480px;margin:0 auto;display:flex;padding:6px 15px;justify-content:space-between;align-items:center;"]);
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "web-head-css__Logo",
+  componentId: "sc-51upct-2"
+})(["color:#fa8182;font-size:36px;font-weight:900;font-family:\"Galano\";cursor:pointer;"]);
+var User = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "web-head-css__User",
+  componentId: "sc-51upct-3"
+})(["width:50px;height:50px;background:url(\"/static/img/me-removebg-preview.png\") no-repeat center center;background-size:contain;border-radius:50%;border:1px solid #e9e8e7;"]);
 
 /***/ }),
 
@@ -14559,7 +14581,7 @@ module.exports = function(module) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊...","author":"Ernie Han","labels":[{"labelName":"數位","labelCode":"digital"},{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"},{"labelName":"玩具人","labelCode":"toy"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]}]};
+module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]}]};
 
 /***/ }),
 
@@ -14710,7 +14732,7 @@ function (_Component) {
           minHeight: "105vh"
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MetaHead__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        title: "\u5DE5\u4F5C\u5143\u4EF6\u5340"
+        title: "Ernie Working Note \u723E\u5C3C\u5DE5\u4F5C\u7B46\u8A18 | \u7B46\u8A18 \u5DE5\u4F5C \u7D00\u9304 \u4F5C\u54C1 \u672D\u8A18 2019"
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_WebHead__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_index_css__WEBPACK_IMPORTED_MODULE_11__["TopSection"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_index_css__WEBPACK_IMPORTED_MODULE_11__["SearchBar"], {
         placeholder: "Quick Search",
         onChange: this.searching
