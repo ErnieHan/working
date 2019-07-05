@@ -102,10 +102,11 @@ class Work extends Component {
       labels,
       url
     } = this.props.articleData;
-    const href = `${GH_PAGE_URL}/${url}`;
+    const href = `${GH_PAGE_URL}/work/${url}`;
     return (
       <div>
         <MetaHead title={`${title} | 爾尼工作元件`} />
+        {console.log("目前網址:", href)}
         <WebHeadForWorkPage />
         <Layout>
           <ArticleTitle>{title}</ArticleTitle>
