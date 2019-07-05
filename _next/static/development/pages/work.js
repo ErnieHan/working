@@ -13551,10 +13551,10 @@ function (_Component) {
           date = _this$props$articleDa.date,
           labels = _this$props$articleDa.labels,
           url = _this$props$articleDa.url;
-      var href = "".concat(_constants__WEBPACK_IMPORTED_MODULE_13__["GH_PAGE_URL"], "/").concat(url);
+      var href = "".concat(_constants__WEBPACK_IMPORTED_MODULE_13__["GH_PAGE_URL"], "/work/").concat(url);
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MetaHead__WEBPACK_IMPORTED_MODULE_8__["default"], {
         title: "".concat(title, " | \u723E\u5C3C\u5DE5\u4F5C\u5143\u4EF6")
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_WebHeadForWorkPage__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Layout, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ArticleTitle, null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ArticleSubTitle, null, subtitle), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }), console.log("目前網址:", href), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_WebHeadForWorkPage__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Layout, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ArticleTitle, null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ArticleSubTitle, null, subtitle), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-image"
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-name-and-labels"
