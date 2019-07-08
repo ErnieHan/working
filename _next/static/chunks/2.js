@@ -1,13 +1,50 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
 
-/***/ "./components/Work/youtube-video-api/index.js":
-/*!****************************************************!*\
-  !*** ./components/Work/youtube-video-api/index.js ***!
-  \****************************************************/
+/***/ "./components/Work/login-and-register/index.js":
+/*!*****************************************************!*\
+  !*** ./components/Work/login-and-register/index.js ***!
+  \*****************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-babel-loader.js):\nSyntaxError: C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\components\\Work\\youtube-video-api\\index.js: Unterminated string constant (8:31)\n\n\u001b[0m \u001b[90m  6 | \u001b[39m  render() {\u001b[0m\n\u001b[0m \u001b[90m  7 | \u001b[39m    \u001b[36mreturn\u001b[39m (\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 | \u001b[39m      \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m style\u001b[33m=\u001b[39m{{ textAlign\u001b[33m:\u001b[39m \u001b[32m'center }}>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m        \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m          \u001b[33m<\u001b[39m\u001b[33miframe\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m            width\u001b[33m=\u001b[39m\u001b[32m\"560\"\u001b[39m\u001b[0m\n    at Object.raise (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:6344:17)\n    at Object.readString (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:7292:14)\n    at Object.getTokenFromCode (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:6971:14)\n    at Object.getTokenFromCode (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:3631:18)\n    at Object.nextToken (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:6542:12)\n    at Object.next (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:6482:10)\n    at Object.eat (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:6487:12)\n    at Object.parseObjectProperty (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:9264:14)\n    at Object.parseObjPropValue (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:9290:101)\n    at Object.parseObjectMember (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:9214:10)\n    at Object.parseObj (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:9138:25)\n    at Object.parseExprAtom (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:8774:21)\n    at Object.parseExprAtom (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:3599:20)\n    at Object.parseExprSubscripts (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:8413:23)\n    at Object.parseMaybeUnary (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:8393:21)\n    at Object.parseExprOps (C:\\Users\\ernie.yeh.t.h\\Desktop\\工作站網頁\\node_modules\\@babel\\parser\\lib\\index.js:8280:23)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+var LoginAndRegister =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(LoginAndRegister, _Component);
+
+  function LoginAndRegister() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, LoginAndRegister);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(LoginAndRegister).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(LoginAndRegister, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, "123");
+    }
+  }]);
+
+  return LoginAndRegister;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (LoginAndRegister);
 
 /***/ })
 

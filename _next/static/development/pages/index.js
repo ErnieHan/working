@@ -61,7 +61,9 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withCo
 var Author = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withConfig({
   displayName: "Article__Author",
   componentId: "ejl8k7-5"
-})(["margin-top:10px;.author-image{float:left;width:50px;height:50px;border-radius:50%;background:url(\"/static/img/sid.jpg\") no-repeat center center;background-size:cover;}.author-name-and-labels{margin-left:15px;float:left;width:calc(100% - 65px);}.author-name{margin:0;font-size:19px;}.labels{display:flex;flex-wrap:wrap;}&::after{display:block;content:\"\";clear:both;}"]);
+})(["margin-top:10px;.author-image{float:left;width:50px;height:50px;border-radius:50%;background:", ";background-size:cover;}.author-name-and-labels{margin-left:15px;float:left;width:calc(100% - 65px);}.author-name{margin:0;font-size:19px;}.labels{display:flex;flex-wrap:wrap;}&::after{display:block;content:\"\";clear:both;}"], function (props) {
+  return "url(\"/static/img/work/main/".concat(props.img, ".png\") no-repeat center center;");
+});
 
 var Article =
 /*#__PURE__*/
@@ -122,13 +124,16 @@ function (_Component) {
           date = _this$props$articleDa.date,
           pointWords = _this$props$articleDa.pointWords,
           labels = _this$props$articleDa.labels,
-          url = _this$props$articleDa.url;
+          url = _this$props$articleDa.url,
+          id = _this$props$articleDa.id;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(LayoutInside, {
         ref: "element",
         state: this.state
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         href: "/work/".concat(url)
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, subtitle)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Date, null, date), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Point, null, pointWords), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, subtitle)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Date, null, date), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Point, null, pointWords), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, {
+        img: id
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-image"
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-name-and-labels"
@@ -167,19 +172,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 
-var Label = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].label.withConfig({
-  displayName: "Label",
-  componentId: "sc-1kv2spb-0"
-})(["background:", ";font-size:12px;margin-right:5px;margin-top:5px;border-radius:5px;min-width:55px;text-align:center;padding:6px 0;color:white;display:flex;justify-content:center;align-items:center;cursor:pointer;"], function (props) {
-  if (props.type === "api") {
+
+var labelColor = function labelColor(type) {
+  console.log(type);
+
+  if (type === "api") {
     return "#67C867";
-  } else if (props.type === "video") {
+  } else if (type === "video") {
     return "#FF9B48";
-  } else if (props.type === "form") {
+  } else if (type === "form") {
     return "#AF957F";
   } else {
     return "black";
   }
+};
+
+var Label = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].label.withConfig({
+  displayName: "Label",
+  componentId: "sc-1kv2spb-0"
+})(["background:", ";font-size:12px;margin-right:5px;margin-top:5px;border-radius:5px;min-width:55px;text-align:center;padding:6px 0;color:white;display:flex;justify-content:center;align-items:center;cursor:pointer;"], function (props) {
+  return labelColor(props.type);
 });
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Label, {
@@ -14581,7 +14593,7 @@ module.exports = function(module) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]}]};
+module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"YouTube 影片或播放清單嵌入網站上或網誌中...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]},{"title":"Login & Register","subtitle":"登入與註冊","date":"July 5 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"}],"url":"login-and-register","id":"login-and-register","keywords":["login","register"]}]};
 
 /***/ }),
 
