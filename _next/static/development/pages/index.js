@@ -62,7 +62,7 @@ var Author = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withC
   displayName: "Article__Author",
   componentId: "ejl8k7-5"
 })(["margin-top:10px;.author-image{float:left;width:50px;height:50px;border-radius:50%;background:", ";background-size:cover;}.author-name-and-labels{margin-left:15px;float:left;width:calc(100% - 65px);}.author-name{margin:0;font-size:19px;}.labels{display:flex;flex-wrap:wrap;}&::after{display:block;content:\"\";clear:both;}"], function (props) {
-  return "url(\"/static/img/work/main/".concat(props.img, ".png\") no-repeat center center;");
+  return "url(\"/static/img/me-img.jpg\") no-repeat center center;";
 });
 
 var Article =

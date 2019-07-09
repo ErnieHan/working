@@ -128,13 +128,13 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "content"
-      }, "\u900F\u904E", "<iframe>", "\u7684\u65B9\u5F0F\u5D4C\u5165Youtube\u5F71\u7247"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CodeSection__WEBPACK_IMPORTED_MODULE_6__["default"], null, "<iframe\n          width=\"560\"\n          height=\"315\"\n          src=\"https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG\"\n          frameBorder=\"0\"\n          allow=\"autoplay; encrypted-media\"\n          allowfullscreen\n        />"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Youtube, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
+      }, "\u900F\u904E", "<iframe>", "\u7684\u65B9\u5F0F\u5D4C\u5165Youtube\u5F71\u7247"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CodeSection__WEBPACK_IMPORTED_MODULE_6__["default"], null, "<iframe\n            width=\"560\"\n            height=\"315\"\n            src=\"https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG\"\n            frameBorder=\"0\"\n            allow=\"autoplay; encrypted-media\"\n            allowFullScreen\n          />"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Youtube, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
         width: "560",
         height: "315",
         src: "https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG",
         frameBorder: "0",
         allow: "autoplay; encrypted-media",
-        allowFullscreen: true
+        allowFullScreen: true
       })));
     }
   }]);
