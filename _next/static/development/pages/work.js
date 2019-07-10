@@ -409,9 +409,11 @@ function (_Component) {
         className: "more-title"
       }, "\u66F4\u591A\u76F8\u95DC\u7684\u6587\u7AE0"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(More, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "more-subtitle"
-      }, article.subtitle), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Image, {
+      }, article.subtitle), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "/work/".concat(article.id)
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Image, {
         img: article.id
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, article.title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, article.title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "more-author-image"
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "more-author-name"
@@ -20793,7 +20795,7 @@ module.exports = {"name":"create-next-example-app","homepage":"/","scripts":{"de
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"YouTube 影片或播放清單嵌入網站上或網誌中...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]},{"title":"Login & Register","subtitle":"登入與註冊","date":"July 5 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"}],"url":"login-and-register","id":"login-and-register","keywords":["login","register"]}]};
+module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"YouTube 影片或播放清單嵌入網站上或網誌中","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]},{"title":"Login & Register","subtitle":"登入與註冊","date":"July 5 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"}],"url":"login-and-register","id":"login-and-register","keywords":["login","register"]}]};
 
 /***/ }),
 
@@ -20874,7 +20876,8 @@ function (_Component) {
           date = _this$props$articleDa.date,
           labels = _this$props$articleDa.labels,
           url = _this$props$articleDa.url,
-          id = _this$props$articleDa.id;
+          id = _this$props$articleDa.id,
+          pointWords = _this$props$articleDa.pointWords;
       var href = "".concat(_constants__WEBPACK_IMPORTED_MODULE_13__["GH_PAGE_URL"], "/work/").concat(url);
       var DynamicWorkingComponent = next_dynamic__WEBPACK_IMPORTED_MODULE_8___default()(function () {
         return __webpack_require__("./components/Work lazy recursive ^\\.\\/.*$")("./".concat(id));
@@ -20890,7 +20893,10 @@ function (_Component) {
         }
       });
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MetaHead__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        title: "".concat(title, " ").concat(subtitle, " | Ernie Working Note \u723E\u5C3C\u5DE5\u4F5C\u7B46\u8A18")
+        title: "".concat(title, " ").concat(subtitle, " | Ernie Working Note \u723E\u5C3C\u5DE5\u4F5C\u7B46\u8A18"),
+        description: pointWords,
+        url: "https://profile.erniexx.website/work/".concat(url),
+        ogImage: "/static/img/work/main/".concat(id, ".png")
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_WebHeadForWorkPage__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_work_css__WEBPACK_IMPORTED_MODULE_15__["Layout"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_work_css__WEBPACK_IMPORTED_MODULE_15__["ArticleTitle"], null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_work_css__WEBPACK_IMPORTED_MODULE_15__["ArticleSubTitle"], null, subtitle, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_FacebookShare__WEBPACK_IMPORTED_MODULE_17__["default"], {
         href: href
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_work_css__WEBPACK_IMPORTED_MODULE_15__["Author"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {

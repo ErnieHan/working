@@ -131,7 +131,7 @@ function (_Component) {
         state: this.state
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         href: "/work/".concat(url)
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, subtitle)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Date, null, date), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Point, null, pointWords), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Title, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", null, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, subtitle)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Date, null, date), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Point, null, pointWords, "..."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Author, {
         img: id
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "author-image"
@@ -14591,7 +14591,7 @@ module.exports = function(module) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"YouTube 影片或播放清單嵌入網站上或網誌中...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]},{"title":"Login & Register","subtitle":"登入與註冊","date":"July 5 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊...","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"}],"url":"login-and-register","id":"login-and-register","keywords":["login","register"]}]};
+module.exports = {"data":[{"title":"Youtube Video API","subtitle":"影片外掛程式","date":"July 3 , 2019","pointWords":"YouTube 影片或播放清單嵌入網站上或網誌中","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"},{"labelName":"影音","labelCode":"video"}],"url":"youtube-video-api","id":"youtube-video-api","keywords":["youtube","video","api","share"]},{"title":"Login & Register","subtitle":"登入與註冊","date":"July 5 , 2019","pointWords":"「分享」按鈕可讓用戶在動態時報、社團或 Facebook 訊息中向朋友分享連結，並加入個人化訊息。 如果您使用的是 iOS 或 Android 原生應用程式，建議改為使用原生的 iOS「分享」對話方塊和 Android「分享」對話方塊","author":"Ernie Han","labels":[{"labelName":"串接","labelCode":"api"}],"url":"login-and-register","id":"login-and-register","keywords":["login","register"]}]};
 
 /***/ }),
 

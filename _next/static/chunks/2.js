@@ -29,6 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import { Base64 } from "js-base64"; //加密解密用
 
 var Div = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withConfig({
   displayName: "login-and-register__Div",
@@ -96,7 +97,9 @@ function (_Component) {
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleChange", function () {
-      console.log(event.target.name);
+      console.log(event.target.name); // const app = Base64.encode(event.target.value);
+      // const aap = Base64.decode(app);
+      // console.log(app, aap);
     });
 
     return _this;
