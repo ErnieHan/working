@@ -19,6 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Loading */ "./components/Loading/index.js");
+
 
 
 
@@ -51,7 +53,7 @@ var InputLabel = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].label
 var RegisterButton = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button.withConfig({
   displayName: "login-and-register__RegisterButton",
   componentId: "sc-1su69q2-5"
-})(["background:#111;color:white;width:100%;padding:8px 16px;border:0;"]);
+})(["background:#111111;color:white;width:100%;padding:8px 16px;border:0;"]);
 
 var LoginAndRegister =
 /*#__PURE__*/
@@ -71,9 +73,30 @@ function (_Component) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(LoginAndRegister)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "componentDidMount", function () {
+      var list = []; // 總共有n個項目，全都塞進陣列裡
+
+      var n = 10;
+
+      for (var i = 0; i < n; i++) {
+        list.push(i);
+      } // 將這筆陣列大家全部重新隨機排列
+
+
+      list.sort(function () {
+        return Math.random() - 0.5;
+      }); // 最後只取三個值
+
+      list.length = 3;
+      console.log(list);
+    });
+
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "submit", function () {
       event.preventDefault();
-      console.log("AAA");
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleChange", function () {
+      console.log(event.target.name);
     });
 
     return _this;
@@ -82,10 +105,14 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(LoginAndRegister, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SubTitle, null, "\u4E00\u3001\u8A3B\u518A\u884C\u70BA"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Form, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(InputDiv, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(InputLabel, null, "\u5E33\u865F"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "text"
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Div, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SubTitle, null, "\u4E00\u3001\u8A3B\u518A\u884C\u70BA"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Form, {
+        onChange: this.handleChange
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(InputDiv, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(InputLabel, null, "\u5E33\u865F"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+        type: "text",
+        name: "account"
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(InputDiv, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(InputLabel, null, "\u5BC6\u78BC"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
-        type: "password"
+        type: "password",
+        name: "password"
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(RegisterButton, {
         onClick: this.submit
       }, "\u8A3B\u518A")));
